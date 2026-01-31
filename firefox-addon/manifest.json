@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "PDF Link Downloader",
+  "version": "1.0",
+  "description": "One-click download of all PDF links on the current page.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "Download all PDFs on this page"
+  },
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
